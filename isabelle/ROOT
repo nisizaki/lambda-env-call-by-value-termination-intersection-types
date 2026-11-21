@@ -1,0 +1,28 @@
+chapter LambdaEnvCBV
+
+session LambdaEnvCBV = HOL +
+  description "
+    Call-by-value termination of lambda_env and its characterization by
+    intersection types.
+  "
+  options [document_output = "output", document_variants = "document:outline=/proof,/ML",
+    quick_and_dirty = false, skip_proofs = false]
+  theories
+    ARS
+    Syntax
+    Sigma
+    Sig_Confluence
+    Reduction
+    Uniform
+    Typing
+    Completeness
+    Soundness
+    Main_Results
+    Examples
+    Order_Independence
+    Lambda
+    Readback
+    VTypes
+    Classical
+  document_files
+    "root.tex"

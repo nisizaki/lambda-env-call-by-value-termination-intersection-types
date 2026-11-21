@@ -1,0 +1,32 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{isabelle,isabellesym}
+\usepackage{amssymb}
+\usepackage{pdfsetup}
+\urlstyle{rm}
+\isabellestyle{it}
+
+\begin{document}
+
+\title{Call-by-Value Termination of $\lambda_{env}$\\and its Characterization by Intersection Types}
+\author{Shin-ya Nishizaki \and Shogo Murasaki}
+\maketitle
+
+\begin{abstract}
+For the calculus $\lambda_{env}$ with first-class environments we define a call-by-value
+reduction: full $\sigma$ together with a deterministic, left-to-right $\beta_v$ that fires
+only on fireball arguments (environments stay lazy).  We prove that a term is typable with
+an essential type in an intersection type system with $\omega$ and environment types,
+which differs from the call-by-name system only by requiring arguments to have essential
+types, if and only if it reaches a clash-free normal form, if and only if all its
+reductions terminate in clash-free normal forms.  Restricted to pure $\lambda$-terms these
+notions coincide with normalization in open call-by-value (the fireball calculus).
+\end{abstract}
+
+\tableofcontents
+
+\parindent 0pt\parskip 0.5ex
+
+\input{session}
+
+\end{document}
